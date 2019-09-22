@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jean.africapp2">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconemathovore"
+        android:label="Mathovore"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Mathovore"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Matrix"
+            android:label="Matrice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Matrix1"
+            android:label="Matrice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Equation"
+            android:label="Equation f(x)=0"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Systemes"
+            android:label="Système E(x)=a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Systeme1"
+            android:label="Equations E(x)=a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Complement"
+            android:label="Calculs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Limite"
+            android:label="Limite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Limite1"
+            android:label="Limite "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Apropros"
+            android:label="A propos"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

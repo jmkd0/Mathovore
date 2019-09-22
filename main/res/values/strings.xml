@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Africapp2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_matrix">Matrix</string>
+    <string name="title_activity_matrix1">Matrix1</string>
+    <string name="title_activity_equation">Equation</string>
+    <string name="title_activity_systemes">Systemes</string>
+    <string name="title_activity_systeme1">Systeme1</string>
+    <string name="title_activity_complement">Complement</string>
+    <string name="title_activity_limite">Limite</string>
+    <string name="title_activity_limite1">Limite1</string>
+    <string name="title_activity_apropros">Apropros</string>
+</resources>

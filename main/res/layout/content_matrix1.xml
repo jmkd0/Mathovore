@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_matrix1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jean.africapp2.Matrix1"
+    tools:showIn="@layout/activity_matrix1">
+    <TextView
+        android:text="proposée par Jean-Marie Komlan Dantodji de Afrik' Apps Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:textColor="#FF96BFBF"
+        android:textStyle="normal|italic"
+        android:textSize="10sp" />
+</RelativeLayout>

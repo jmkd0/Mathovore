@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_limite1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jean.africapp2.Limite1"
+    tools:showIn="@layout/activity_limite1"
+    android:background="#FF472562">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:gravity="center_horizontal"
+        android:background="#FF472562">
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:background="#B4C2C6"
+            android:inputType="none"
+            android:hint="x=?"
+            android:focusable="false"
+            android:textColor="#FF000000" />
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear2"
+        android:background="#FF472562">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F8F8F8"
+            android:textSize="18sp"
+            android:id="@+id/textfonc"/>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear3S"
+        android:layout_below="@id/linear2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear3"
+            android:background="#FF472562">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:paddingLeft="40dp"
+                android:textColor="#15EAE5"
+                android:textSize="18sp"
+                android:id="@+id/textlim11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#15EAE5"
+                android:paddingLeft="40dp"
+                android:textSize="18sp"
+                android:layout_below="@id/textlim11"
+                android:id="@+id/textx11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#15EAE5"
+                android:paddingLeft="40dp"
+                android:layout_below="@id/textx11"
+                android:id="@+id/textsi11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textlim11"
+                android:paddingTop="50dp"
+                android:paddingLeft="60dp"
+                android:textSize="18sp"
+                android:textColor="#15EAE5"
+                android:id="@+id/textlim22"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textlim22"
+                android:textSize="18sp"
+                android:paddingLeft="60dp"
+                android:textColor="#15EAE5"
+                android:layout_below="@id/textlim22"
+                android:id="@+id/textx22"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textx22"
+                android:paddingLeft="60dp"
+                android:textColor="#15EAE5"
+                android:layout_below="@id/textx22"
+                android:id="@+id/textsi22"/>
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linescro"
+        android:layout_below="@id/linear3S">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF472562">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF472562"
+                android:layout_gravity="bottom" >
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/table">
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <Button android:text="8"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#204EA3"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="9"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#204EA3"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+
+                        <Button android:text="⇦"
+                            android:layout_width="60dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:textColor="#204EA3"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/stat_notify_more"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+                        <Button android:text="4"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#204EA3"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="5"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#204EA3"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="6"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:textColor="#204EA3"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="7"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:textColor="#204EA3"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+                        <Button android:text="0"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#204EA3"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="1"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#204EA3"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="2"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:textColor="#204EA3"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="3"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:textColor="#204EA3"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+                        <Button android:text="-∞"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/black" />
+                        <Button android:text="."
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#204EA3"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"/>
+                        <Button android:text="-"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/black" />
+                        <Button android:text="+∞"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:textColor="#2E5957"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/checkbox_off_background" />
+                        <Button android:text="Calculer"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:background="@android:drawable/progress_horizontal"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:layout_weight="1"
+                            android:selectAllOnFocus="false"
+                            android:textAllCaps="false" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

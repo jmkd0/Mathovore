@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jean.africapp2.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF472562"
+        android:id="@+id/linear">
+
+        <TextView
+            android:text="BIENVENUE POUR VOS CALCULS MATHÉMATIQUES."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="#FFBDBEFD"
+            android:textStyle="normal|bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="Voici les rubriques:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="#FFCDF1F9"
+            android:textStyle="normal|bold"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF472562"
+        android:id="@+id/liste"
+        android:layout_below="@id/linear"/>
+    <TextView
+        android:text="proposée par Jean-Marie Komlan Dantodji de Afrik' Apps Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:id="@+id/textView4"
+        android:textColor="#FF96BFBF"
+        android:textStyle="normal|italic"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
